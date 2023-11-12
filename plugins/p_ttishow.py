@@ -8,9 +8,16 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
-
+import random, os, sys
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
+@Client.on_message(filters.command('restart') & filters.incoming)
+async def restart_bot(bot, message):
+    msg = await message.reply("Restarting...")
+    with open('restart.txt', 'w+') as file:
+        file.write(f"{msg.chat.id}\n{msg.id}")
+    os.execl(sys.executable, sys.executable, "bot.py")
+    
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
     r_j_check = [u.id for u in message.new_chat_members]
