@@ -46,13 +46,13 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://benoj60137:TmFajHsZTzw
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'new_files')
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', '1')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', '0')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://youtu.be/doWqsAGy9h4?si=EIfZzNxF2CMzjtQi")
 VERIFY2_URL = environ.get('VERIFY2_URL', "api.shareus.io")
 VERIFY2_API = environ.get('VERIFY2_API', "uMqvZtYEWAM8uoQigOVX5HOPh253")
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'FkVjLGrRBYfjYw58mjxNLfNVsIF2')
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
+IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', '1')), False)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
