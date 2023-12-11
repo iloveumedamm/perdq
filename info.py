@@ -42,11 +42,11 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", '0')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://benoj60137:TmFajHsZTzwZjpNo@cluster0.a5feauq.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Gjkkkk:4&.EZF*Kb4h4ugP@cluster0.sr3wflc.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'new_files')
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', '1')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', '0')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/streaamdb/1578")
 VERIFY2_URL = environ.get('VERIFY2_URL', "api.shareus.io")
 VERIFY2_API = environ.get('VERIFY2_API', "FkVjLGrRBYfjYw58mjxNLfNVsIF2")
@@ -63,7 +63,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ A�
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001953206885'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'streaamdb')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "1")), False)
-IMDB = is_enabled((environ.get('IMDB', "0")), True)
+IMDB = is_enabled((environ.get('IMDB', "1")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
